@@ -1,3 +1,112 @@
 body {
   padding-top: 70px;
+
+}
+.navbar_initial {
+    background-color: white;
+    opacity: 0.95;
+}
+
+.section:target {
+    padding-top: 50px;
+}
+
+/*center navbar*/
+.navbar-collapse.collapse {
+        text-align: center;
+        /*display: block !important;*/
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+
+}
+
+.navbar-nav {
+    display: inline-block;
+    float: none;
+    margin: 0;
+
+}
+
+.navbar-nav>li {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Roboto Mono',sans-serif ;
+  font-size: 150%;
+  /*text-transform: uppercase;*/
+}
+
+/*home*/
+.hometext{
+  margin-top: 100px;
+}
+
+#home>div>div>h1{
+  font-family: 'Roboto Mono',sans-serif ;
+  font-size: 250%;
+  text-transform: uppercase;
+
+}
+
+
+
+#home>div>div>h2{
+  font-family: 'Roboto Mono',sans-serif ;
+  font-size: 200%;
+  text-transform: uppercase;
+
+}
+
+#home>div>div>p{
+  font-family: 'Roboto Mono',sans-serif ;
+  font-size: 130%;
+  /*text-transform: uppercase;*/
+
+}
+/*contact links*/
+ul {
+	overflow: auto; /*removes points from list */
+}
+
+/*gets rid of the bulleted list and aligns the elements
+in a row by floating them left.*/
+ul li {
+	list-style-type: none;
+	float: left;
+}
+
+/*
+sets the background and foreground colors, it creates
+the circle background by declaring the same value for the width and height and
+half that value for the border radius. You will need to use padding-top to
+control the vertical spacing of the font.*/
+
+.contactLinks {
+
+  transition: all 0.2s ease-in-out;
+}
+.contactLinks>a{
+  font-size: 65px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+/*adding hover effect*/
+.contactLinks>a:hover {
+	opacity: .5;
+}
+/*add the social media default colors */
+.fa-github {
+  color: black;
+}
+.fa-linkedin {
+
+  color:#007bb6;
+}
+.fa-twitter {
+
+  color: #00aced;
+}
+.fa-code {
+
+  color: #4a2b0f;
 }
