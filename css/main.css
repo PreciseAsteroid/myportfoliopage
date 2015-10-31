@@ -1,14 +1,18 @@
 body {
   padding-top: 70px;
 
+
 }
+
+
+
 .navbar_initial {
     background-color: white;
     opacity: 0.95;
 }
 
 .section:target {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 /*center navbar*/
@@ -63,6 +67,20 @@ body {
   /*text-transform: uppercase;*/
 
 }
+
+/*carousel*/
+.carousel-inner{
+  font-family: 'Roboto Mono',sans-serif ;
+
+}
+/*keep the images with the same height*/
+.item img {
+  width: auto;
+  height: 500px;
+  max-height: 500px;
+}
+
+
 /*contact links*/
 ul {
 	overflow: auto; /*removes points from list */
@@ -84,6 +102,7 @@ control the vertical spacing of the font.*/
 .contactLinks {
 
   transition: all 0.2s ease-in-out;
+  margin-bottom: 500px;
 }
 .contactLinks>a{
   font-size: 65px;
