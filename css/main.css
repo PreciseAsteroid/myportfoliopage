@@ -69,9 +69,18 @@ body {
 }
 
 /*carousel*/
-.carousel-inner{
+.carousel{
   font-family: 'Roboto Mono',sans-serif ;
+}
 
+/*carousel remove image*/
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-nav{
+  color: black;
+  position: relative;
 }
 /*keep the images with the same height*/
 .item img {
