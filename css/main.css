@@ -1,24 +1,49 @@
 body {
   padding-top: 70px;
-
-
 }
 
+/* set a max-width for horizontal fluid layout and make it centered */
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 950px; /* or 950px */
+}
 
+h2,h1{
+  font-family: 'Roboto Mono',sans-serif ;
+  /*font-size: 200%;*/
+  text-transform: uppercase;
+
+}
+h1{
+  font-size: 4em;
+}
+h2{
+  font-size: 2em;
+}
+
+p{
+  font-family: 'Roboto Mono',sans-serif ;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
 
 .navbar_initial {
     background-color: white;
     opacity: 0.95;
 }
 
-.section:target {
-    /*padding-top: 50px;*/
+.section {
+    margin-top: 1em;
+}
+
+.headers {
+    padding-bottom: 30px!important;
 }
 
 /*center navbar*/
 .navbar-collapse.collapse {
         text-align: center;
-        /*display: block !important;*/
         height: auto !important;
         padding-bottom: 0;
         overflow: visible !important;
@@ -36,7 +61,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   font-family: 'Roboto Mono',sans-serif ;
-  font-size: 150%;
+  font-size: 2em;
   /*text-transform: uppercase;*/
 }
 
@@ -45,48 +70,48 @@ body {
   margin-top: 100px;
 }
 
-#home>div>div>h1{
-  font-family: 'Roboto Mono',sans-serif ;
-  font-size: 250%;
-  text-transform: uppercase;
 
-}
-
-
-
-#home>div>div>h2{
-  font-family: 'Roboto Mono',sans-serif ;
-  font-size: 200%;
-  text-transform: uppercase;
-
-}
-
-#home>div>div>p{
-  font-family: 'Roboto Mono',sans-serif ;
-  font-size: 130%;
-  /*text-transform: uppercase;*/
-
-}
 
 /*carousel*/
 .carousel{
-  font-family: 'Roboto Mono',sans-serif ;
+  /*font-family: 'Roboto Mono',sans-serif ;*/
 }
 
 /*carousel remove image*/
 .carousel-control.left, .carousel-control.right {
-    background-image: none
+    background-image: none;
+    font-size: 70px !important;
 }
 
 .carousel-nav{
   color: black;
-  position: relative;
+  /*font-size: 70px;*/
 }
+
+
 /*keep the images with the same height*/
 .item img {
   width: auto;
   height: 500px;
   max-height: 500px;
+}
+/*put the captions under the images*/
+.carousel-caption {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+}
+
+.carousel-caption h2 {
+font-family:    'Roboto Mono',sans-serif;
+font-size:      2em;
+color:          black !important;
+}
+/* Description text */
+.carousel-caption p {
+font-family:    'Roboto Mono',sans-serif;
+font-size:      1em;
+color:          black !important;
 }
 
 
@@ -108,15 +133,19 @@ the circle background by declaring the same value for the width and height and
 half that value for the border radius. You will need to use padding-top to
 control the vertical spacing of the font.*/
 
+#contact{
+  margin-bottom: 100px;
+
+}
+
 .contactLinks {
 
   transition: all 0.2s ease-in-out;
-  margin-bottom: 500px;
-}
+  }
 .contactLinks>a{
-  font-size: 65px;
-  margin-right: 30px;
-  margin-left: 30px;
+  font-size: 3em;
+  /*margin-right: 30px;
+  margin-left: 30px;*/
 }
 /*adding hover effect*/
 .contactLinks>a:hover {
@@ -137,4 +166,16 @@ control the vertical spacing of the font.*/
 .fa-code {
 
   color: #4a2b0f;
+}
+
+.footer>a{
+  opacity: .5;
+  font-family: 'Roboto Mono',sans-serif ;
+  font-size: 1em;
+  text-transform: uppercase;
+
+}
+
+.footer>a:hover{
+  opacity: 1.0;
 }

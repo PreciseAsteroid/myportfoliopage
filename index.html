@@ -22,6 +22,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- custom -->
   <script src="js/adjust.js"></script>
+  <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+  <link id="page_favicon" href="favicon.ico" rel="icon" type="image/x-icon">
+
 
 </head>
 
@@ -29,22 +32,25 @@
 
   <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top navbar_initial" role="navigation">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
+
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"></a>
+          <!-- <a class="navbar-brand" href="#"> -->
+           <a href="#" class="pull-left" ><img src="img/logo/palogo8.png" height="50px" alt="PreciseAsteroid Logo"/></a>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -55,33 +61,37 @@
       <!-- /.container-fluid -->
     </nav>
     <div id="home" class="section">
-      <div class="row">
-        <div class="col-md-6 text-center pagination-centered hometext">
+      <!-- <div class="row">
+        <div class="col-sm-8">
           <h1>Amir Baruch</h1>
-          <h2>The All Around Product Developer</h2>
-          <p class="lead">
-            Passionate about the creative process from...
-            <br>the big empty white page
-            <br>through pen n pencil sketches
-            <br>customer interaction
-            <br>engineering
-            <br>and up to the code
-            <br> I love it all...
-          </p>
-        </div>
-        <div class="col-md-6 text-center pagination-centered">
-          <img class="img-responsive img-circle center-block" src="img/profile/PICT1297.JPG" alt="profile picture" />
+        </div> -->
+        <div class="row">
+          <div class="col-sm-7">
+            <p>This site is not about my bio<br>
+              For that I have <a href="https://de.linkedin.com/in/amirbaruch"><i class="fa fa-linkedin-square"></i></a><br>
+              This site is about experssing my creative part<br>
+              <br>You see, as a Product Manager you don't have time to code. so your creativity is there but you never take it all the way.
+              <br><br>As a developer you can't really streer the product. That really bothered me back then.
+              <br> So what's the solution?<br>
+              well, there isn't any. just code when you can. <br>
+              it will bring fun and creativity to your life while making you a better professional<br>
+              and who knows...maybe the BIG idea will pop one day and and it will be the next <a href="https://de.linkedin.com/in/amirbaruch"><i class="fa fa-facebook-square"></i></a><br>
+            </p>
+
+          </div>
+          <div class="col-sm-5 pagination-centered text-center">
+            <img class="img-responsive img-circle center-block" src="img/profile/PICT1297.JPG" alt="profile picture" />
+          </div>
         </div>
       </div>
-    </div>
-    <div id="about" class="section">
-      <h1>About</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quam debitis ex distinctio deleniti ratione, aut rerum. Aliquid odit hic ab dolorem. Soluta tempore, reiciendis nobis mollitia enim! Ratione, perspiciatis.</p>
-    </div>
     <div id="portfolio" class="section">
-      <h1>Porfolio</h1>
+
+      <div class="row text-center headers">
+          <h2>Porfolio</h2>
+      </div>
       <div class="row">
-        <!-- end car -->
+        <div class="col-sm-12">
+        <!-- start car -->
         <div id="carousel-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -93,14 +103,21 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="img/projects/thisPage.jpg" alt="" class="center-block img-responsive">
-              <div class="carousel-caption white">
-                  <h2>This very site</h2>
-                  <p>bootsrap, jqeury and HTML</p>
+              <img src="img/projects/mysite.jpg" alt="" class="center-block img-responsive">
+              <div class="carousel-caption">
+                <h2>This site</h2>
+                <p>bootsrap, jqeury and HTML</p>
               </div>
             </div>
             <div class="item">
-              <img src="http://lorempixel.com/500/500/technics/1" alt="" class="center-block">
+              <img src="img/projects/thisPage.jpg" alt="" class="center-block img-responsive">
+              <div class="carousel-caption">
+                <h2>Place holder</h2>
+                <p>Place holder</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="https://placeimg.com/480/480/tech" alt="" class="center-block">
               <div class="carousel-caption">
                 <h2>Place holder</h2>
                 <p>Place holder</p>
@@ -108,7 +125,7 @@
             </div>
 
             <div class="item">
-              <img src="http://lorempixel.com/500/500/nightlife/1" alt="" class="center-block">
+              <img src="https://placeimg.com/480/480/tech" alt="" class="center-block">
               <div class="carousel-caption">
                 <h2>Place holder</h2>
                 <p>Place holder</p>
@@ -120,31 +137,36 @@
 
           <!-- Controls -->
           <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-triangle-left icon-prev carousel-nav "</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-generic" data-slide="next">
-            <span class="glyphicon glyphicon-triangle-right icon-next carousel-nav"></span>
-          </a>
+            <span class="glyphicon glyphicon-triangle-left icon-prev carousel-nav"</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+              <span class="glyphicon glyphicon-triangle-right icon-next carousel-nav"></span>
+            </a>
+          </div>
+          <!-- end car -->
         </div>
-        <!-- end car -->
+
+        </div>
 
       </div>
 
-    </div>
-
-    <div id="contact" class="section">
-      <div class="row row-centered">
-        <div class="col-md-12 text-center pagination-centered contactLinks">
-          <a href="https://github.com/PreciseAsteroid"><i class="fa fa-github"></i></a>
-          <a href="https://de.linkedin.com/in/amirbaruch"><i class="fa fa-linkedin"></i></a>
-          <a href="https://twitter.com/the_star_man"><i class="fa fa-twitter"></i></a>
-          <a href="http://freecodecamp.com/preciseasteroid"><i class="fa fa-code"></i></a>
-          <a href="mailto:baruch.amir@gmail.com?subject=sending from yr site"><i class="fa fa-envelope"></i></a>
+      <div id="contact" class="section">
+        <div class="contactLinks row text-center row-centered">
+          <!-- <div class="col-md-12 text-center pagination-centered contactLinks"> -->
+          <a class="col-sm-offset-4 col-sm-1 col-xs-12" href="https://github.com/PreciseAsteroid"><i class="fa fa-github"></i></a>
+          <a class="col-sm-1 col-xs-12" href="https://de.linkedin.com/in/amirbaruch"><i class="fa fa-linkedin"></i></a>
+          <a class="col-sm-1 col-xs-12" href="https://twitter.com/the_star_man"><i class="fa fa-twitter"></i></a>
+          <a class="col-sm-1 col-xs-12" href="http://freecodecamp.com/preciseasteroid"><i class="fa fa-code"></i></a>
+          <a class="col-sm-1 col-xs-12" href="mailto:baruch.amir@gmail.com?subject=sending from yr site"><i class="fa fa-envelope"></i></a>
+          <!-- </div> -->
         </div>
       </div>
+      <div class="footer" style="text-align:center;">
+            <a target="_blank" href="http://www.amirbaruch.com">All Work</a>
+            <a href="http://www.amirbaruch.com" target="_blank">&copy;PreciseAsteroid // aka Amir Baruch</a>
+      </div>
     </div>
-  </div>
-  <!-- <div class="containe"> -->
-</body>
+    <!-- <div class="containe"> -->
+  </body>
 
-</html>
+  </html>
