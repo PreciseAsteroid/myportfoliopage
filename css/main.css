@@ -22,10 +22,9 @@ h2{
   font-size: 2em;
 }
 
-p{
-  font-family: 'Roboto Mono',sans-serif ;
-  text-transform: uppercase;
-  font-size: 1.1em;
+
+img {
+  max-width: 100%;
 }
 
 .navbar_initial {
@@ -70,50 +69,12 @@ p{
   margin-top: 100px;
 }
 
-
-
-/*carousel*/
-.carousel{
-  /*font-family: 'Roboto Mono',sans-serif ;*/
+.overview{
+  padding-top: 50px;
+  font-family: 'Roboto Mono',sans-serif ;
+  text-transform: uppercase;
+  font-size: 1.3em;
 }
-
-/*carousel remove image*/
-.carousel-control.left, .carousel-control.right {
-    background-image: none;
-    font-size: 70px !important;
-}
-
-.carousel-nav{
-  color: black;
-  /*font-size: 70px;*/
-}
-
-
-/*keep the images with the same height*/
-.item img {
-  width: auto;
-  height: 500px;
-  max-height: 500px;
-}
-/*put the captions under the images*/
-.carousel-caption {
-    position: relative !important;
-    left: auto !important;
-    right: auto !important;
-}
-
-.carousel-caption h2 {
-font-family:    'Roboto Mono',sans-serif;
-font-size:      2em;
-color:          black !important;
-}
-/* Description text */
-.carousel-caption p {
-font-family:    'Roboto Mono',sans-serif;
-font-size:      1em;
-color:          black !important;
-}
-
 
 /*contact links*/
 ul {
